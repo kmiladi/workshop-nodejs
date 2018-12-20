@@ -1,0 +1,42 @@
+<body>
+    <h1>Liste des produits</h1>
+    <ul>
+        <% products.forEach(function(product){ %>
+        <li>
+            <%- product.id %> - <%- product.name %> / <%- product.EUR_price %> / <%- product.orders_counter %>            
+            <button type="button" id="<%- product.id %>" class="order-button">OrderPoduct</button>
+            <input type="hidden" id="kk" value="11" />
+        </li>
+      <%});%>
+   </ul>
+
+   <form method="POST" action="/login" id="login-form">
+        <input type="text" name="login" id="login" />
+        <input type="password" name="password" id="password" />
+        <input type="submit" value="Login" />
+    </form>
+ </body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+
+
+$( document ).ready(function() {
+    $("#login-form").hide();
+
+    $(".order-button").on( "click", function() {  
+        $("#login-form").show();
+        return false;
+        fetch(`/order/${this.id}`)
+        .then(function(response) {
+            alert(response.json);
+        })
+
+        .catch(function(error) {
+            alert(response.json);
+        });
+    });
+});
+
+
+</script>

@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "product 1",
+        "description": "description product 1",
+        "USD_price": "20",
+        "EUR_price": "17.1",
+        "file_link": "file product 1",
+        "creation_date": "2018-12-10",
+        "orders_counter": 19
+    },
+    {
+        "id": 2,
+        "name": "product 2",
+        "description": "description product 2",
+        "USD_price": "15.1",
+        "EUR_price": "12.3",
+        "file_link": "file product 1",
+        "creation_date": "2018-12-15",
+        "orders_counter": 29
+    },
+    {
+        "id": 3,
+        "name": "product 3",
+        "description": "description product 3",
+        "USD_price": "42.6",
+        "EUR_price": "37.9",
+        "file_link": "file product 3",
+        "creation_date": "2018-12-15",
+        "orders_counter": 109
+    }
+]

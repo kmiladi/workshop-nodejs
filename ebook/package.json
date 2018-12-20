@@ -1,0 +1,29 @@
+{
+  "name": "ebook",
+  "version": "1.0.0",
+  "description": "workshop ebook",
+  "main": "app.js",
+  "scripts": {
+    "test": "test",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [
+    "ebook",
+    "nodejs"
+  ],
+  "author": "Karim Miladi",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-restify-mongoose": "^5.0.0",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.4.0",
+    "pug": "^2.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}
